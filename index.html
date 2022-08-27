@@ -15,200 +15,92 @@
 <body>
     <div w3-include-HTML="./components/navbar/navbar.html"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-        <div class="container">
-            <a class="navbar-brand" href="#">Projeto Web</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                </ul>
-                <form class="d-flex text-white" role="search">
-                    <img class="img-fluid img-profile" width="40" src="./img//profile-image.jpg" />
-                    <span class="align-self-center p-2"><strong>Cailane</strong></span>
-                </form>
-            </div>
-        </div>
-    </nav>
-
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-12">
-                <div class="card border-0 shadow mb-4 mb-md-0">
-                    <div class="card-body">
-                        <ul class="list-unstyled ps-0 m-0">
-                            <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed"
-                                    data-bs-toggle="collapse" data-bs-target="#inicio" aria-expanded="true">
-                                    Início
-                                </button>
-                                <div class="collapse show" id="inicio">
-                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a href="#intrducao" class="link-dark rounded">Introdução</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed"
-                                    data-bs-toggle="collapse" data-bs-target="#controle-versao" aria-expanded="true">
-                                    Controle de Versão
-                                </button>
-                                <div class="collapse" id="controle-versao">
-                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a href="#controle-versao-git" class="link-dark rounded">Git</a></li>
-                                        <li><a href="#controle-versao-github" class="link-dark rounded">Github</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed"
-                                    data-bs-toggle="collapse" data-bs-target="#dashboard-collapse"
-                                    aria-expanded="false">
-                                    Testes
-                                </button>
-                                <div class="collapse" id="dashboard-collapse">
-                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a href="#" class="link-dark rounded">TDD</a></li>
-                                        <li><a href="#" class="link-dark rounded">Pytest</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed"
-                                    data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                                    Flask Framework
-                                </button>
-                                <div class="collapse" id="orders-collapse">
-                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a href="#" class="link-dark rounded">New</a></li>
-                                        <li><a href="#" class="link-dark rounded">Processed</a></li>
-                                        <li><a href="#" class="link-dark rounded">Shipped</a></li>
-                                        <li><a href="#" class="link-dark rounded">Returned</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <div w3-include-HTML="./components/sidebar/sidebar.html"></div>
             </div>
             <div class="col-md-9 col-sm-12">
-                <div id="controle-versao-item">
+                <div id="introducao" class="collapse show mb-5">
+                    <h1>Introdução</h1>
+                    <p class="lead">Este trabalho tem por objetivo demonstrar o desenvolvimento de uma página web
+                        utilizando a linguagen de marcação HTML e a de estilo CSS, com o propósito de criar uma página
+                        de conteúdo com os temas Git e Github, Testes de software e o framework Flask. </p>
+                    <a class="btn btn-primary" href="#introducao" data-bs-toggle="collapse">Clique aqui e vamos
+                        iniciar</a>
+                </div>
+
+                <div class="mb-5">
                     <h1>Controle de Versão</h1>
                     <p class="lead">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.
+                        Sistemas de controle de versão, são ferramentas utilizadas para gerenciar o versionamento de
+                        código. Seu principal objetivo e manter um histórico de todas as alterações realizadas durante o
+                        desenvolvimento de um software, por exemplo. Contudo, vale ressaltar que o versionamento pode
+                        ser realizado por arquivos, imagens, etc. Para o versionamento de código, abordarei sobre o
+                        <strong><a class="text-decoration-none" href="https://git-scm.com/"
+                                target="_blank">Git</a></strong>
+                        e o <strong><a class="text-decoration-none" href="https://github.com/"
+                                target="_blank">Github</a></strong>.
+                    </p>
 
-                        Why do we use it?
-                        It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                        their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
-                        their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-                        purpose (injected humour and the like).
+                    <h3 id="controle-versao-git">Git</h3>
+                    <p class="lead">
+                        O Git é um software open-source, ou seja, de código aberto que visa gerenciar o controle de
+                        versão de projetos de software.
+                    </p>
 
-
-                        Where does it come from?
-                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
-                        Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
-                        words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
-                        classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32
-                        and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-                        written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
-                        Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-                        section 1.10.32.
-
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                        Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced
-                        in their exact original form, accompanied by English versions from the 1914 translation by H.
-                        Rackham.
+                    <h3 id="controle-versao-github">Github</h3>
+                    <p class="lead">
+                        Por sua vez, o Github é um software que utiliza o Git para controle de versão de código,
+                        altamente popular.
                     </p>
                 </div>
-                <div id="testes">
+                <div class="mb-5">
                     <h1>Testes</h1>
                     <p class="lead">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.
-
-                        Why do we use it?
-                        It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                        their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
-                        their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-                        purpose (injected humour and the like).
-
-
-                        Where does it come from?
-                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
-                        Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
-                        words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
-                        classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32
-                        and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-                        written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
-                        Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-                        section 1.10.32.
-
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                        Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced
-                        in their exact original form, accompanied by English versions from the 1914 translation by H.
-                        Rackham.
+                        Testes no contexto de desenvolvimento de software, geralmente são utilizados para testar partes
+                        de um software com o objetivo de cobrir a maior partes dos casos de teste possíveis. Como
+                        resultado, o software desenvolvido passa a ter mais qualidade, aumentando a manutenibiliadde e
+                        refatoração de código. Diante disso, existem vários tipos de testes de software, contudo, vou
+                        abordar apenas a técnica test-driven development (TDD).
+                    </p>
+                    <h3 id="testes-tdd">TDD</h3>
+                    <p class="lead">
+                        O TDD é o desenvolvimento orientado por testes, o qual visa em primeiro desenvolver um teste
+                        para um nova funcionalidade que vai ser desenvolvida. (<strong><a class="text-decoration-none"
+                                href="https://www.devmedia.com.br/test-driven-development-tdd-simples-e-pratico/18533"
+                                target="_blank">ver artigo aqui</a></strong>).
+                    </p>
+                    <h3 id="testes-pytest">Pytest</h3>
+                    <p class="lead">
+                        O Pytest é uma ferramenta que permite a realização de testes de software para a linguagem de
+                        programação python. Para mais detalhes sobre o framework, acesse a sua documentação <strong><a
+                                class="text-decoration-none" href="https://docs.pytest.org/en/7.1.x/"
+                                target="_blank">aqui</a></strong>
                     </p>
                 </div>
-                <div id="flask-framework">
+                <div id="flask-framework" class="mb-5">
                     <h1>Flask Framework</h1>
                     <p class="lead">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.
+                        O Flask framework, é uma ferramenta em python com o objetivo de proporcionar a criação de
+                        aplicações web pequenas. Uma de suas vantagens é:
+                    </p>
 
-                        Why do we use it?
-                        It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                        their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
-                        their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-                        purpose (injected humour and the like).
+                    <ul>
+                        <li>Simplicidade;</li>
+                        <li>Rapidez;</li>
+                        <li>Pequenas soluções;</li>
+                    </ul>
 
-
-                        Where does it come from?
-                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
-                        Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
-                        words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
-                        classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32
-                        and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-                        written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
-                        Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-                        section 1.10.32.
-
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                        Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced
-                        in their exact original form, accompanied by English versions from the 1914 translation by H.
-                        Rackham.
+                    <p class="lead">
+                        Desde o seu lançamento, uma ampla gama de aplicações foram desenvolvidas. Para mais detalhes,
+                        veja
+                        sua documentação <strong><a class="text-decoration-none"
+                                href="https://flask.palletsprojects.com/en/2.2.x/" target="_blank">aqui</a></strong> e
+                        um
+                        pequeno artigo <strong><a class="text-decoration-none"
+                                href="https://blog.geekhunter.com.br/flask-framework-python/"
+                                target="_blank">aqui</a></strong>.
                     </p>
                 </div>
             </div>
