@@ -9,3 +9,7 @@ body {
 .side-bar {
     position: fixed;
 }
+
+.lead {
+    text-align: justify;
+}
