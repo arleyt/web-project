@@ -13,7 +13,28 @@
 </head>
 
 <body>
-    <div w3-include-HTML="navbar.html"></div>
+    <div w3-include-HTML="./components/navbar/navbar.html"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">Projeto Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+                <form class="d-flex text-white" role="search">
+                    <img class="img-fluid img-profile" width="40" src="./img//profile-image.jpg" />
+                    <span class="align-self-center p-2"><strong>Cailane</strong></span>
+                </form>
+            </div>
+        </div>
+    </nav>
 
     <div class="container">
         <div class="row">
